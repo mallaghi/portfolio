@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio | Maram Allaghi</title>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <section id="home" class="hero">
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="img/logo.png"
+          alt="marams portfolio"
+          class="nav__logo"
+          id="logo"
+        />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">About me </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#">
+              Contact </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="container w-75">
+        <div class="header__content">
+          <div class="header__main">
+            <div class="header__title">
+              <h1>
+                Maram Allaghi
+                <br />
+                <span class="highlight">Software Engineer</span>
+              </h1>
+              <p>Hey, I'm Maram 👋🏼. A passionate junior software engineer based in London, United Kingdom. 📍</p>
+            </div>
+            <div class="header__img"></div>
+          </div>
+          <div class="tech__stack">
+            <p> Tech Stack</p>
+            <div class="logos">
+              <ul class="p-0">
+                <li>
+                  <img src="https://skillicons.dev/icons?i=html,css" alt="skill-icon">
+                </li>
+                <li>
+                  <img src="https://skillicons.dev/icons?i=bootstrap,scss" alt="skill-icon">
+                </li>
+                <li>
+                  <img src="https://skillicons.dev/icons?i=js,rails" alt="skill-icon">
+                </li>
+                <li>
+                  <img src="https://skillicons.dev/icons?i=heroku,postgresql" alt="skill-icon">
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+      </div>
+      <span class="social__icons">
+        <a aria-label="linkedin" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/maramallaghi/"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-linkedin"><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M8 11l0 5"></path><path d="M8 8l0 .01"></path><path d="M12 16l0 -5"></path><path d="M16 16v-3a2 2 0 0 0 -4 0"></path></svg></a>
+        <a aria-label="github" rel="noreferrer" target="_blank" href="https://github.com/mallaghi"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-github"><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg></a>
+      </span>
+      <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+    </div>
+
+    </header>
+    </section>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">About me</h2>
+        <h3 class="section__header">
+          A dedicated and passionate software engineer on an exciting path of personal and professional growth.
+        </h3>
+      </div>
+
+      <div class="about">
+        <img
+          src="img/digital-lazy.jpg"
+          data-src="img/digital.avif"
+          alt="Computer"
+          class="about__img lazy-img"
+        />
+        <div class="about__extended">
+          <div class="about__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-trending-up"></use>
+            </svg>
+          </div>
+          <h5 class="about__header">From Marketing to Full Stack Development</h5>
+          <p>
+            My journey began in Growth Marketing, where I not only managed multimillion-dollar projects but also put my coding skills to good use by creating automation tools and scrapers for clients.
+          </p>
+        </div>
+
+        <div class="about__extended">
+          <div class="about__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h5 class="about__header">Deeping My Understanding with Le Wagon's Web Development Bootcamp</h5>
+          <p>
+            I successfully completed an intensive Web Development Bootcamp in London.
+            During those 24 weeks, I delved deep into the world of web development, learning essential skills like Figma, HTML, CSS, Bootstrap, JavaScript, SQL, postgresql,  git, GitHub, Heroku, and Ruby on Rails. <br />
+            I'm passionate about creating innovative web solutions, and excited to continue growing as a developer and bringing fresh ideas to life.
+
+          </p>
+        </div>
+        <img
+          src="img/grow-lazy.png"
+          data-src="img/grow.png"
+          alt="lewagon class 2023"
+          class="about__img lazy-img"
+        />
+
+        <img
+          src="img/coding-lazy.png"
+          data-src="img/coding.avif"
+          alt="Code on a laptop"
+          class="about__img lazy-img"
+        />
+        <div class="about__extended">
+          <div class="about__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-eye"></use>
+            </svg>
+          </div>
+          <h5 class="about__header">What's next?</h5>
+          <p>
+            I'm on the lookout for a junior software engineering role within a dynamic company that values continuous learning and growth through mentorship. My enthusiasm, can-do attitude, and eagerness to take on challenges drive me to consistently deliver outstanding results. I'm excited to be part of a team that encourages personal and professional development, and I'm ready to contribute my best to help achieve shared success.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section " id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Projects</h2>
+        <h3 class="section__header">
+          Some of my favorite projects
+        </h3>
+      </div>
+
+      <div class="projects">
+        <div class="projects__tab-container">
+          <button
+            class="btn projects__tab projects__tab--1 projects__tab--active"
+            data-tab="1"
+          >
+            <span>01</span>The Dishers
+          </button>
+          <button class="btn projects__tab projects__tab--2" data-tab="2">
+            <span>02</span>Petstagram
+          </button>
+          <button class="btn projects__tab projects__tab--3" data-tab="3">
+            <span>03</span>Marclays
+          </button>
+        </div>
+        <div class="projects__content projects__content--1 projects__content--active" >
+          <img class="projects__icon projects__icon--1" src="img/dishers_logo.png"/>
+          <h5 class="projects__header">
+            Bringing transparency to the service indusrty
+          </h5>
+          <p>
+            I contributed to the development of The Dishers, a Ruby-on-Rails application designed to empower service industry professionals by providing a platform to discover and review hospitality jobs. a Ruby-On-Rails web application my team and I created to empower service industry workers by enabling them to review and rate their workplace experiences, while also helping them discover new job opportunities. Its primary goal is to bring greater transparency to the service and hospitality industry
+          </p>
+          <div class="links">
+            <a target="_blank" href="https://github.com/alexwilliams-2/The-Dishers" rel="noreferrer"> Code <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-github"><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg></a>
+            <a class="mx-3" target="_blank" href="http://www.thedishers.co.uk/" rel="noreferrer">Live Demo<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-external-link"><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"></path><path d="M11 13l9 -9"></path><path d="M15 4h5v5"></path></svg></a>
+          </div>
+
+        </div>
+
+        <div class="projects__content projects__content--2">
+          <img class="projects__icon projects__icon--2" src="img/petstagram.png"/>
+          <h5 class="projects__header">
+            Instagram for your pets 🐾
+          </h5>
+          <p>
+            Petstagram is a dynamic Ruby on Rails application, mirroring the core functionalities of Instagram. With secure user authentication,
+            it allows seamless signup, login, and logout processes. Users can also upload and share posts, view personalized feeds,
+            like and comment on posts, and engage in real-time chat.
+            Currently in progress is the exciting feature of photo sharing with captions.
+            Petstagram offers a familiar and engaging social media experience while highlighting the versatility of the Ruby on Rails framework.
+          </p>
+          <div class="links">
+            <a target="_blank" href="https://github.com/mallaghi/Instagram_Clone/" rel="noreferrer"> Code <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-github"><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg></a>
+            <a class="mx-3" target="_blank" href="https://petstagram-635e01789a0d.herokuapp.com/" rel="noreferrer">Live Demo<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-external-link"><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"></path><path d="M11 13l9 -9"></path><path d="M15 4h5v5"></path></svg></a>
+          </div>
+        </div>
+        <div class="projects__content projects__content--3">
+          <img class="projects__icon projects__icon--3" src="img/marclays-logo.png">
+
+          <h5 class="projects__header">
+            A simple bank web app
+          </h5>
+          <p>
+            Marclays is a JavaScript web application designed for basic banking functions, offering a seamless experience for managing transactions.
+             Users can easily initiate transfers, check their account balances, and even request loans! <br /> Login user: ma password: 1111
+          </p>
+          <div class="links">
+            <a target="_blank" href="https://github.com/mallaghi/marclays" rel="noreferrer"> Code <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-github"><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg></a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="section  section--cta">
+      <div class="section__title">
+        <h3 class="section__header">
+          The best way to find out more about my skills and projects is to contact me
+        </h3>
+      </div>
+      <button class="btn btn--show-modal">Get in touch now!</button>
+    </section>
+
+    <footer class="footer">
+
+      <img src="img/icon.png" alt="Logo" class="footer__logo" />
+      <p class="footer__copyright">
+
+        <a
+          class="footer__link linkedin-link"
+          target="_blank"
+          href="https://www.linkedin.com/in/maramallaghi/"
+          >Maram Allaghi</a>
+      </p>
+    </footer>
+
+    <div class="contact__modal container hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Let's get in touch!
+      </h2>
+      <h3> <strong>Email me: </strong> <a href="mailto:writtenbymaram@gmail.com">writtenbymaram@gmail.com</a></h3>
+
+      <h3> Or <strong>book a call  </strong>with me here &DownArrow;</h3>
+      <!-- Calendly inline widget begin -->
+      <div class="calendly-inline-widget" data-url="https://calendly.com/writtenbymaram/one-on-one-with-me?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=DD3B85" style="min-width:400px;height:500px;"></div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      <!-- Calendly inline widget end -->
+      <h5 class="mt-3"> Dont forget to check out my socials &DownArrow;</h5>
+      <span class="social__icons">
+        <a aria-label="linkedin" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/maramallaghi/"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-linkedin"><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M8 11l0 5"></path><path d="M8 8l0 .01"></path><path d="M12 16l0 -5"></path><path d="M16 16v-3a2 2 0 0 0 -4 0"></path></svg></a>
+        <a aria-label="github" rel="noreferrer" target="_blank" href="https://github.com/mallaghi"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-github"><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg></a>
+      </span>
+
+    </div>
+    <div class="overlay hidden"></div>
+
+  </body>
+</html>
