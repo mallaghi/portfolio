@@ -403,6 +403,18 @@ h4 {
   margin-bottom: 1rem;
 }
 
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 25%;
+  z-index: 1;
+}
 
 
 /* PROJECTS */
@@ -868,6 +880,18 @@ h4 {
     margin: 1rem 0;
   }
 
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 25%;
+    z-index: 1;
+  } 
   .header__title {
     margin-top: 0;
     align-content: baseline;
