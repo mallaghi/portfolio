@@ -62,6 +62,8 @@ message.style.width = '120%';
 message.style.height =
   Number.parseFloat(getComputedStyle(message).height, 10) + 40 + 'px';
 
+
+
 // Page navigation
 links.addEventListener('click', function (e) {
   e.preventDefault();
@@ -99,6 +101,7 @@ tabsContainer.addEventListener('click', function (e) {
     .classList.add('projects__content--active');
 });
 
+
 // Navigation display
 
 const handleHover = function (e) {
@@ -114,6 +117,8 @@ const handleHover = function (e) {
 };
 nav.addEventListener('mouseover', handleHover.bind(0.5));
 nav.addEventListener('mouseout', handleHover.bind(1));
+
+
 
 // sticky navigation
 const navHeight = nav.getBoundingClientRect().height;
@@ -162,6 +167,3 @@ const imageObserver = new IntersectionObserver(loadImage, {
   rootMargin: '200px',
 });
 imageTargets.forEach(image => imageObserver.observe(image));
-
-
-

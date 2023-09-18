@@ -16,7 +16,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 
 }
 
@@ -179,6 +179,8 @@ img {
   color: #333;
 }
 
+
+
 /* HEADER & HERO*/
 .hero {
   display: flex;
@@ -188,6 +190,9 @@ img {
   width: 100%;
 }
 
+.main{
+  width: 75%;
+}
 .header {
   padding: 0 3rem;
   height: 100vh;
@@ -220,9 +225,7 @@ img {
   position: relative;
   margin-top: 15rem;
 }
-/* .header__title button {
-   justify-content: left;
-} */
+
 
 .header__title p {
   font-size: 1.8rem;
@@ -261,10 +264,6 @@ h4 {
 }
 
 .header__img {
-  /* transform: translateY(-6rem);
-  grid-column: 2 / 3;
-  grid-row: 1 / span 4;
-  grid-row: 1 / span 4; */
   margin-top: 3rem;
   -webkit-animation: morph 8s ease-in-out infinite;
     animation: morph 8s ease-in-out infinite;
@@ -367,6 +366,10 @@ h4 {
   margin: 0 12rem;
 }
 
+.about.mobile {
+  display: none;
+}
+
 .about__img {
   width: 100%;
 }
@@ -399,6 +402,8 @@ h4 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
+
+
 
 /* PROJECTS */
 .projects {
@@ -633,7 +638,7 @@ h4 {
   opacity: 0;
 }
 
-/* COOKIE MESSAGE */
+/* VISA MESSAGE */
 .visa-message {
   display: flex;
   align-items: center;
@@ -643,4 +648,242 @@ h4 {
   color: #bbb;
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 1024px) {
+  .modal {
+    width: auto;
+    max-width: 60rem;
+    padding: 5rem 6rem;
+  }
+
+
+  .about {
+    margin: 0 12rem;
+  }
+
+  .header__title {
+    grid-template-columns: 3fr 2fr;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    height: 100vh;
+  }
+
+  .section {
+    padding: 15rem 3rem;
+  }
+
+
+  .visa-message {
+    padding: 1rem;
+
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav {
+    padding: 0 3rem;
+    height: 6rem;
+  }
+
+  .main{
+    width: 100%;
+  }
+
+  .header {
+    padding: unset;
+  }
+
+  .nav__links {
+    flex-wrap: wrap;
+    padding: 2rem 0 3rem;
+    top: 6rem;
+    flex-direction: column;
+    position: relative;
+    left: -100%;
+    transition: 0.3s;
+    display: none;
+  }
+
+  .nav__links.active {
+    left: 0;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+
+  .header__title {
+    padding: 6rem 4rem;
+  }
+
+  .nav__item:not(.nav__btn) {
+    flex-basis: 100%;
+  }
+
+  .nav__item {
+    margin-left: unset;
+    line-height: 2.5;
+  }
+
+
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .visa-message {
+    font-size: 1rem;
+      max-width: 100%;
+  }
+
+  .btn--close-cookie{
+
+    font-size: 1rem;
+    padding: 1rem 2.5rem;
+
+  }
+
+  .header__main {
+    flex-direction: column-reverse;
+    gap: 3rem;
+    height: auto;
+    text-align: center;
+    /* padding-top: 11rem; */
+  }
+
+  .header__img {
+    height: 20rem;
+    width: 20rem;
+  }
+  .header__content {
+    flex-direction: column;
+    gap: 3rem;
+    height: auto;
+    text-align: center;
+  }
+
+  .tech__stack {
+    flex-direction: column;
+    position: static;
+  }
+
+  .tech__stack ul {
+    justify-content: center;
+  }
+
+  .tech__stack p {
+    border-bottom: 2px solid rgba(45,46,50,.5);
+    border-right: none;
+    margin-bottom: 3rem;
+    margin-right: 0;
+    padding-bottom: 1rem;
+    padding-right: 0;
+  }
+
+  .header span {
+  display: none;
+  }
+
+  .btn--scroll-to{
+    display: none;
+  }
+  .nav {
+    flex-wrap: wrap;
+  }
+
+  .nav__logo {
+    display: none;
+  }
+
+
+  .footer__item {
+    margin-right: 2rem;
+  }
+
+  .section__header {
+    font-size: 3rem;
+  }
+
+  .projects__tab-container {
+    flex-wrap: wrap;
+  }
+
+  .projects__tab {
+    margin-right: 0;
+    width: 80%;
+    margin: 0.25rem 0;
+  }
+
+  .projects__tab--active {
+    transform: translateY(-50%) scale(1.1);
+    margin: 1rem 0;
+  }
+
+  .projects__content {
+    padding: 3rem;
+  }
+
+  .projects__header {
+    font-size: 2rem;
+  }
+
+  .projects__content--active {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+  .modal__header {
+    font-size: 2.7rem;
+  }
+
+  .about {
+    display: none;
+  }
+
+  .about.mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6rem;
+    margin: 0;
+  }
+
+  .about__extended {
+    width: 100%;
+  }
+
+  .about__header {
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  .header__title {
+    margin-top: 0;
+    align-content: baseline;
+  }
+
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .btn.projects__tab {
+    padding: 1rem;
+  }
+
+  .section--cta .btn {
+    padding: 2rem 3rem;
+  }
 }
